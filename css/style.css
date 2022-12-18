@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-wallpaper {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background-color: #a0cdd3e7;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/house.png), url(../img/pexels-photo.webp);
+  background-size: 150px, cover;
+  background-repeat: no-repeat;
+  background-position: 50% 80%, 50% 50%;
+}
+
+.texture {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/texture.jpeg);
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.content {
+  min-height: auto;
+  background-color: #a4c2ebab;
+  margin-top: 160px;
+  margin-bottom: 115px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: #6494ed;
+  z-index: 1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: #6494ed;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #53148d;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: orangered;
+}
+
+p,
+ul,
+li,
+a,
+h3,
+.visitor-name {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+a {
+  font-weight: 500;
+}
+
+.visitor-name {
+  font-size: 16px;
+  color: #8b2f0d;
+}
+
+a[href="#section-menu"],
+a[href="#main-menu"],
+h3 {
+  color: blue;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-link {
+  background-color: indigo;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  border-radius: 7px;
+  text-transform: uppercase;
+  transition: 0.25s;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background-color: tomato;
+  transform: scale(1.1) translateY(-7px);
+  box-shadow: 0 7px 15px black;
+}
+
+.new::after {
+  content: "new";
+  color: white;
+  background-color: orange;
+  font-size: 90%;
+  padding: 2px;
+  margin-left: 3px;
+}
+
+.article-name {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #210f53;
+  color: #210f53;
+}
+
+.short-description {
+  background-color: #ff000054;
+  color: #210f53;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.further-links {
+  color: green;
+}
+
+.further-links:hover {
+  text-decoration: none;
+  color: tomato;
+}
+
+.comments-links {
+  color: #3d3d41;
+}
+
+.name-of-the-article {
+  text-align: center;
+}
+
+.different-first-letter::first-letter {
+  font-family: "Arial Black";
+  font-size: 30px;
+  color: #a3213b;
+}
+
+.list-marker-1 {
+  list-style-image: url(../img/folderaccess.png);
+}
+
+.list-marker-2 {
+  list-style-image: url(../img/documentedit.png);
+}
+
+.content-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 0px 20px;
+  display: inline-grid;
+  text-align: center;
+}
+
+.image-link {
+  color: #6112ac;
+  text-decoration: none;
+}
+
+.border-decorated {
+  border-color: tomato;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.border-decorated:hover {
+  border-color: transparent;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: #d4a7a7;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 35vh;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: #3944dd;
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.form-group-sm:hover {
+  outline: 2px dotted white;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: skyblue;
+}
+
+.back-link {
+  display: block;
+  position: relative;
+  top: -130px;
+  visibility: hidden;
+}
+
+.contacts-info {
+  text-align: center;
+}
